@@ -9,7 +9,10 @@
     <body>
         <!-- navigation bar section -->
         <nav id="desktop-nav">
-            <div class="logo">Genevieve Teh</div>
+            <img 
+            src="./assets/logo.png" 
+            alt="Medley logo"
+            class="logo">
             <div>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -20,7 +23,10 @@
             </div>
         </nav>
         <nav id="mobile-nav">
-            <div class="logo">Genevieve Teh</div>
+            <img 
+            src="./assets/logo.png" 
+            alt="Medley logo"
+            class="logo">
             <div class="mobile-menu">
                 <div class="mobile-icon" onclick="toggleMenu()">
                     <span></span>
@@ -70,6 +76,57 @@
                     onclick="location.href='https://github.com/medley-co'">
                 </div>
             </div>
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img 
+                    src="./assets/about-pic.jpg" 
+                    alt="Circuit image"
+                    class="about-pic">
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                            src="./assets/experience.png" 
+                            alt="Experience icon"
+                            class="icon">
+                            <h3>Work Experience</h3>
+                            <p>Art Educator</p>
+                            <p>Cloud Engineering Intern</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                            src="./assets/education.png" 
+                            alt="Education icon"
+                            class="icon">
+                            <h3>Education</h3>
+                            <p>Bachelor of Computer Science</p>
+                            <p>Master of Cyber Security</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            I'm a dual-degree Computer Science and Cybersecurity 
+                            student at University of Queensland with a knack for 
+                            blending creativity and tech. 
+                            When I'm not painting or dabbling in graphic design, 
+                            you'll find me chasing flags in CTFs or hacking the 
+                            airwaves with my Flipper Zero and HackRF. 
+                            Curiosity is my superpower, and I'm always up for 
+                            cracking puzzles or crafting masterpieces!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img 
+            src="./assets/arrow.png" 
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./index.html#experience'">
         </section>
         <script src="script.js"></script>
     </body>

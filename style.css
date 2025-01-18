@@ -3,6 +3,7 @@
 :root {
     --hoverfont: #cba4a4;
     --darkfont: #7b4c4c;
+    --background: rgb(53, 53, 53);
 }
 
 * {
@@ -58,7 +59,8 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    height: 250px;
+    margin-top: 2rem;
 }
 
 .logo:hover {
@@ -173,9 +175,11 @@ section {
 
 .section-container {
     display: flex;
+    gap: 4rem;
+    height: 80%;
 }
 
-/* PROFILE SECTION */
+/* ----------------------------------PROFILE SECTION */
 
 #profile {
     display: flex;
@@ -186,8 +190,8 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin: auto 0;
 }
 
@@ -245,7 +249,7 @@ section {
 }
 
 .btn-color-1, .btn-color-2 {
-    border: rgb(53,53,53) 0.1rem solid;
+    border: var(--background) 0.1rem solid;
 }
 
 .btn-color-1:hover, .btn-color-2:hover {
@@ -253,12 +257,12 @@ section {
 }
 
 .btn-color-1, .btn-color-2:hover {
-    background-color: rgb(53,53,53);
+    background-color: var(--background);
     color: white;
 }
 
 .btn-color-1:hover {
-    background-color: rgb(0,0,0);
+    background-color: var(--hoverfont);
 }
 
 .btn-color-2 {
@@ -266,9 +270,51 @@ section {
 }
 
 .btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
+    border: white 0.1rem solid;
 }
 
 .btn-container {
     gap: 1rem;
 }
+
+/* ------------------------------------ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: var(--background) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+

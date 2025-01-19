@@ -109,4 +109,9 @@
     .text-container {
         text-align: justify;
     }
+
+    .project-img {
+        width: 8rem;
+        height: 7rem;
+    }
 }
